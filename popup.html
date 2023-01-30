@@ -1,0 +1,114 @@
+<!------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Name: Lisa Moody
+Project: DSP EquityTech Screen reader
+Type: Google Chrome extension
+Page: popup.html
+Description: Contains all the features on the popup for the extension interface.
+Last edited: 27/04/22  -->
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--START-->
+<!--Html for google chrome extension -->
+
+<!DOCTYPE html>
+<html>
+<!--Linking css stylesheet-->
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Title of chrome extension-->
+    <div class="title">
+        <h1> EquityTech Screen reader </h1>
+    </div>
+
+    <!-- Created and embedded application logo-->
+    <div class="logo">
+        <!--Logo image-->
+        <img src="Images/EquityTech logo1.png" alt="logo" width="70" height="70">
+    </div>
+
+    <!--Container around the whole extension-->
+    <div class="container">
+
+        <!--Toggle to turn on/off screen reader-->
+        <div class="TTSReader">
+            <h3 class="text1"> Activate Screen reader: </h3>
+            <!--Start and stop buttons-->
+            <button id="read">Start Reading</button>
+            <button id="stopReading">Stop Reading</button>
+
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!--Clears each time to keep text and button on same line-->
+        <div style="clear: both;"></div>
+
+        <!--Colour overlay dropdown box-->
+        <h3 class="text2"> Colour overlay options: </h3>
+
+        <!--Colour overlay button choices-->
+        <div class="overlaybtns">
+            <button id="add-green">Green</button>
+            <button id="add-blue">Blue</button>
+            <button id="add-yellow">Yellow</button>
+            <button id="add-red">Red</button>
+            <button id="add-orange">Orange</button>
+            <button id="remove-colour">Clear colour</button>
+            <button id="add-pink">Pink</button>
+            <button id="add-purple">Purple</button>
+        </div>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!--Dictionary definition on/off checkbox button -->
+        <h3 class="text4"> Dictionary definitions: </h3>
+
+        <!--toggle for dictionary-->
+
+        <!--modal selector-->
+        <button class="buttondict" data-modal-target="#modal"> Open dictionary</button>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title1">Dictionary search:</div>
+                <button class="close-button">&times;</button>
+            </div>
+
+            <!--Dictionary search-->
+            <div class="modal-body">
+
+                <!-- <div class="container"> -->
+                <p class="info">Type the word in the search box and click the search button below:</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Type the word here.." id="dict-word" />
+                    <button id="search-btn">Search</button>
+                </div>
+                <div class="result" id="result"></div>
+
+            </div>
+        </div>
+
+        <!--Overlay over extension when dictionary is open-->
+        <div id="overlay"></div>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!--Link to feedback survey from users-->
+        <div class="SurveySettings">
+            <h3 class="text6"><i>Leave us feedback in the survey: </i></h3>
+
+            <!--Survey link to qualtrics-->
+            <a href="https://uwe.eu.qualtrics.com/jfe/form/SV_a9R83EH71jmnhZk" target="_blank">Click here to answer the survey</a>
+        </div>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    </div>
+    <!-- javascript script-->
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
+<!--END-->

@@ -1,0 +1,683 @@
+/*******************************************************************************************************************************************************/
+
+
+/* Name: Lisa Moody
+Project: DSP EquityTech Screen reader
+Type: Google Chrome extension
+Page: style.css
+Description: Adds styling to all linked html pages for this extension
+Last edited: 27/04/22 */
+
+
+/**********************************************************************************************************************************************************************************/
+
+
+/*Main body styling section*/
+
+
+/***********************************************************************************************************************************************************************************/
+
+
+/*Pop-up sizing as a whole entire body*/
+
+body {
+    min-width: 575px;
+    border-top: 11px;
+    border-bottom: 11px;
+    border-left: 11px;
+    border-right: 11px;
+    height: 445px;
+    background-color: rgb(31, 85, 63);
+    border-color: #b6f5b6;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Editing for under the EquityTech title and logo*/
+
+.container {
+    min-width: 575px;
+    border-top: 11px;
+    border-bottom: 11px;
+    border-left: 11px;
+    border-right: 11px;
+    background-color: rgb(31, 85, 63);
+    border-color: #4fc568;
+    border-style: solid;
+    align-items: start;
+    justify-items: end;
+    height: 425px;
+}
+
+
+/*Title heading style*/
+
+.title {
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    color: #fafffb;
+    text-shadow: 4px 4px rgb(2, 2, 2);
+    float: left;
+    font-size: 20px;
+}
+
+
+/*Top right logo styling on UI*/
+
+.logo {
+    float: right;
+}
+
+
+/*All h3 headings styling*/
+
+h3 {
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: #fdfafa;
+    text-shadow: 1.5px 1.5px #0c0c0c;
+}
+
+
+/***********************************************************************************************************************************************************************************/
+
+
+/*TTS feature section*/
+
+
+/***********************************************************************************************************************************************************************************/
+
+
+/* Screen reader text*/
+
+.text1 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+}
+
+
+/*TTS reader start button style*/
+
+#read {
+    background-color: white;
+    color: black;
+    border: 2px solid #34af4f;
+    float: center;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+
+/*TTS start button hover styling */
+
+#read:hover {
+    background-color: #4de06d;
+    color: white;
+}
+
+
+/*TTS reader stop button style*/
+
+#stopReading {
+    background-color: white;
+    color: black;
+    border: 2px solid #34af4f;
+    float: right;
+    margin-right: 30px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+
+/*TTS stop button hover styling */
+
+#stopReading:hover {
+    background-color: #ec4747;
+    color: white;
+}
+
+
+/***********************************************************************************************************************************************************************************/
+
+
+/*Dictionary feature section*/
+
+
+/***********************************************************************************************************************************************************************************/
+
+
+/*Dictionary title text*/
+
+.text4 {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    clear: both;
+    margin-top: 40px;
+}
+
+
+/*Dictionary open button */
+
+.buttondict {
+    background-color: white;
+    color: black;
+    border: 2px solid #34af4f;
+    float: right;
+    margin-right: 170px;
+    border-radius: 5px;
+    padding: 10px 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+
+/* Hover for dictionary button */
+
+.buttondict:hover {
+    background-color: #34af4f;
+    color: white;
+}
+
+
+/*Dictionary Modal styling pop-up*/
+
+.modal {
+    position: fixed;
+    top: 27%;
+    left: 60%;
+    transform: translate(-25%, -25%) scale(0);
+    border: 3px solid #34af4f;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgb(31, 85, 63);
+    width: 307px;
+    height: 445px;
+    max-width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* When dictionary modal is open */
+
+.modal.active {
+    transform: translate(-25%, -25%) scale(1);
+}
+
+
+/*Dictionary modal header styling*/
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+
+/*Dictionary modal title on pop-up styling*/
+
+.modal-header .title1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    float: right;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-left: 20px;
+    color: #fafffb;
+    text-shadow: 2px 2px rgb(2, 2, 2);
+    float: left;
+    font-size: 23px;
+}
+
+
+/*Close button styling on dictionary modal window*/
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fafffb;
+}
+
+
+/* Dictionary modal body styling*/
+
+.modal-body {
+    padding: 15px 10px;
+}
+
+
+/*Dictionary modal overlay- darkens out background when opened*/
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+
+/*Dictionary overlay is active when window (modal) open*/
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/* Dictionary paragraphs style */
+
+.modal-body p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fdfafa;
+    text-shadow: 1px 1px #0c0c0c;
+}
+
+
+/* Dictionary modal body information text */
+
+.modal-body .info-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fafffb;
+    text-shadow: 2px 2px rgb(2, 2, 2);
+}
+
+*:not(i) {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Spacing between input bar and button*/
+
+.search-box {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+/* Dictionary info styling*/
+
+.modal-body .info {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fafffb;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/*Dictionary search box input bar*/
+
+.search-box input {
+    padding: 5px;
+    width: 70%;
+    border: 1px solid #fdfafa;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom: 2px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* dictionary search word button styling*/
+
+.search-box button {
+    padding: 5px 0;
+    width: 25%;
+    background-color: white;
+    color: black;
+    border: 2px solid #34af4f;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* dictionary search button styling mouse hover*/
+
+.search-box button:hover {
+    background-color: #34af4f;
+    color: white;
+}
+
+
+/*Incorrect word/ error message styling */
+
+.errorMsg {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #fafffb;
+    text-shadow: 2px 2px rgb(2, 2, 2);
+}
+
+
+/***********************************************************************************************************************************************************************************/
+
+
+/*Colour overlay section */
+
+
+/***********************************************************************************************************************************************************************************/
+
+
+/*Overlay text*/
+
+.text2 {
+    float: left;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    clear: both;
+    margin-top: 40px;
+}
+
+
+/*Colour overlay button stylings*/
+
+
+/*Green colour overlay styling button*/
+
+#add-green {
+    background-color: white;
+    color: black;
+    border: 2px solid #34af4f;
+    float: right;
+    margin-right: 25px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 50%;
+    padding: 6px;
+    margin-top: 20px;
+}
+
+
+/*Green colour hover styling button*/
+
+#add-green:hover {
+    background-color: #33A46B;
+    color: white;
+}
+
+
+/*Blue colour overlay styling button*/
+
+#add-blue {
+    background-color: white;
+    color: black;
+    border: 2px solid #34af4f;
+    float: right;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 50%;
+    padding: 6px;
+    margin-top: 20px;
+}
+
+
+/*Blue colour hover styling button*/
+
+#add-blue:hover {
+    background-color: #1A81A4;
+    color: white;
+}
+
+
+/*Yellow colour overlay styling button*/
+
+#add-yellow {
+    background-color: white;
+    color: black;
+    border: 2px solid #34af4f;
+    float: right;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 50%;
+    padding: 6px;
+    margin-top: 20px;
+}
+
+
+/*Yellow colour hover styling button*/
+
+#add-yellow:hover {
+    background-color: #CECE34;
+    color: white;
+}
+
+
+/*Red colour overlay styling button*/
+
+#add-red {
+    background-color: white;
+    color: black;
+    border: 2px solid #34af4f;
+    float: right;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 50%;
+    padding: 6px;
+    margin-top: 20px;
+}
+
+
+/*Red colour hover styling button*/
+
+#add-red:hover {
+    background-color: #C74A4A;
+    color: white;
+}
+
+
+/*Orange colour overlay styling button*/
+
+#add-orange {
+    background-color: white;
+    color: black;
+    border: 2px solid #34af4f;
+    float: right;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 50%;
+    padding: 6px;
+    margin-top: 20px;
+}
+
+
+/*Orange colour hover styling button*/
+
+#add-orange:hover {
+    background-color: #D07628;
+    color: white;
+}
+
+
+/*Pink colour overlay styling button*/
+
+#add-pink {
+    background-color: white;
+    color: black;
+    border: 2px solid #34af4f;
+    float: right;
+    margin-right: 20px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+
+/*Pink colour hover styling button*/
+
+#add-pink:hover {
+    background-color: #F06D76;
+    color: white;
+}
+
+
+/*Purple colour overlay styling button*/
+
+#add-purple {
+    background-color: white;
+    color: black;
+    border: 2px solid #34af4f;
+    float: right;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 7px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+
+/*Purple colour hover styling button*/
+
+#add-purple:hover {
+    background-color: #8572AD;
+    color: white;
+}
+
+
+/*Remove colour overlay styling button*/
+
+#remove-colour {
+    background-color: white;
+    color: black;
+    border: 2px solid #34af4f;
+    float: right;
+    margin-right: 25px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 7px;
+    font-weight: bold;
+    margin-left: 63px;
+    margin-bottom: 8px;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+
+/*Remove colour hover styling button*/
+
+#remove-colour:hover {
+    background-color: #b6f5b6;
+    color: black;
+}
+
+
+/***********************************************************************************************************************************************************************************/
+
+
+/*Survey link section */
+
+
+/***********************************************************************************************************************************************************************************/
+
+
+/*survey text*/
+
+.text6 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+
+/*Survey link itself style*/
+
+a {
+    color: rgb(255, 255, 255);
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+
+/*Mouse hovers over survey link*/
+
+a:hover {
+    color: rgb(109, 101, 58);
+    background-color: #060707;
+}
+
+
+/*Survey title text and link together*/
+
+.SurveySettings {
+    display: inline-block;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/********************************************************************************************************************************************************************************/
+
+
+/*END*/
